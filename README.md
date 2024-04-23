@@ -52,7 +52,7 @@ Las tareas asociadas a cada meta se mostrarán como tarjetas en el lado derecho 
 El proyecto sigue la siguiente estructura de archivos:
 
 ```
-todo-list-app/
+actividad1-DAW-22011423/
 ├── public/
 ├── src/
 │   ├── components/
