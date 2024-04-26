@@ -83,8 +83,8 @@ actividad1-22011423/
   - **App.js**: El punto de entrada principal de la aplicación.
   - **App.css**: Archivo de estilos CSS para la aplicación.
   - **index.js**: Archivo de inicio de la aplicación React.
- 
-### Imagenes
+
+## Imagenes
 
 ![image](https://github.com/Wvega1697/actividad1-22011423/assets/20270532/b4eea702-2839-43b1-9f9e-7647b7ea3177)
 
