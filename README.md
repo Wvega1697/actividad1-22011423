@@ -85,6 +85,7 @@ actividad1-22011423/
   - **index.js**: Archivo de inicio de la aplicación React.
  
 ### Imagenes
+
 ![image](https://github.com/Wvega1697/actividad1-22011423/assets/20270532/b4eea702-2839-43b1-9f9e-7647b7ea3177)
 
 ![image](https://github.com/Wvega1697/actividad1-22011423/assets/20270532/d972d678-6805-40f8-90e2-57bd6747fdfa)
