@@ -1,6 +1,6 @@
-# Actividad 1 - 22011423
+# Actividad 2 - 22011423
 Williams Adolfo Vega Montenegro
-Actividad 1 - Curso "Desarrollo de Aplicaciones Web - Sección A"
+Actividad 2 - Curso "Desarrollo de Aplicaciones Web - Sección A"
 
 # Aplicación de Lista de Tareas y Metas Personales
 
@@ -59,18 +59,18 @@ actividad1-22011423/
 │   │   ├── Menu/
 │   │   │   ├── Menu.js
 │   │   │   ├── Menu.scss
-│   │   ├── Form/
-│   │   │   ├── Form.js
-│   │   │   ├── Form.scss
-│   │   ├── List/
-│   │   │   ├── List.js
-│   │   │   ├── List.scss
+│   │   ├── ItemForm/
+│   │   │   ├── ItemForm.js
+│   │   │   ├── ItemForm.scss
+│   │   ├── ItemList/
+│   │   │   ├── ItemList.js
+│   │   │   ├── ItemList.scss
 │   │   ├── Item/
 │   │   │   ├── Item.js
 │   │   │   ├── Item.scss
-│   │   ├── GoalButton/
-│   │   │   ├── GoalButton.js
-│   │   │   ├── GoalButton.scss
+│   │   ├── AddButton/
+│   │   │   ├── AddButton.js
+│   │   │   ├── AddButton.scss
 │   ├── App.js
 │   ├── App.css
 │   └── index.js
