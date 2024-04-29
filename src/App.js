@@ -1,27 +1,52 @@
-//import logo from "./logo.svg";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import "./App.scss";
-import ListForItem from "./Components/ListForItem/ListForItem";
-import FormTask from "./Components/FormTask/FormTask";
+import ItemList from "./Components/ItemList/ItemList";
+import ItemForm from "./Components/ItemForm/ItemForm";
 import Menu from "./Components/Menu/Menu";
-import GoalButton from "./Components/GoalButton/GoalButton";
+import AddButton from "./Components/AddButton/AddButton";
+import Alert from "react-bootstrap/Alert";
+import { useSelector, useDispatch } from "react-redux";
+import { showAlert, hideAlert } from "./reducers/alertSlice";
+import "./App.scss";
 
 function App() {
+  const alert = useSelector((state) => state.alert.value);
+  const dispatch = useDispatch();
+
+  const handleShowAlert = (type, message) => {
+    dispatch(showAlert({ type, message }));
+    const timer = setTimeout(() => {
+      dispatch(hideAlert());
+    }, 3000);
+    return () => clearTimeout(timer);
+  };
+
   return (
     <div className="App">
       <Menu />
+      <div className="alert-container">
+        {alert.show && (
+          <Alert variant={alert.type} onClose={handleShowAlert} dismissible>
+            {alert.message}
+          </Alert>
+        )}
+      </div>
       <Container className="centered-container">
         <Row>
-          <Col xs={12} md={6} className="d-none d-sm-block d-sm-none d-md-block " >
-            <FormTask />
+          <Col
+            xs={12}
+            md={6}
+            className="d-none d-sm-block d-sm-none d-md-block "
+          >
+            <ItemForm onAdd={handleShowAlert} />
           </Col>
           <Col xs={12} md={6}>
             <Row className="d-md-none">
               <div className="bg-transparent overlapping-div ">
-                <GoalButton className="float-left" />
+                <AddButton className="float-left" />
               </div>
             </Row>
-            <ListForItem />
+            <ItemList onDelete={handleShowAlert} />
           </Col>
         </Row>
       </Container>
