@@ -85,6 +85,19 @@ proyecto-22011423/
   - **index.js**: Archivo de inicio de la aplicación React.
 
 ## Imagenes
+## Actividad 2
+
+![image](https://github.com/Wvega1697/proyecto-22011423/assets/20270532/0b51bb8f-2bec-4d23-a574-c88db2cebc22)
+
+![image](https://github.com/Wvega1697/proyecto-22011423/assets/20270532/777c6b70-87cd-4a3a-b5f3-f4a9824f835a)
+
+![image](https://github.com/Wvega1697/proyecto-22011423/assets/20270532/c4318834-d1ac-4168-839d-d9c2ec325661)
+
+![image](https://github.com/Wvega1697/proyecto-22011423/assets/20270532/7feda2a3-97b8-484a-b9b3-4f67bccb6579)
+
+![image](https://github.com/Wvega1697/proyecto-22011423/assets/20270532/0e8a748b-d0d0-4683-a26f-e1dbc86c97f2)
+
+## Actividad 1
 
 ![image](https://github.com/Wvega1697/actividad1-22011423/assets/20270532/b4eea702-2839-43b1-9f9e-7647b7ea3177)
 
