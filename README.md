@@ -18,12 +18,12 @@ Sigue estos pasos para configurar y ejecutar la aplicación en tu entorno local:
 
 1. **Clona el Repositorio**: Abre una terminal y ejecuta el siguiente comando para clonar este repositorio en tu máquina:
    ```bash
-   git clone https://github.com/Wvega1697/actividad1-22011423.git
+   git clone https://github.com/Wvega1697/proyecto-22011423.git
    ```
 
 2. **Navega al Directorio del Proyecto**: Accede a la carpeta recién creada:
    ```bash
-   cd actividad1-22011423
+   cd proyecto-22011423
    ```
 
 3. **Instala las Dependencias**: Usa npm para instalar las dependencias del proyecto:
@@ -52,7 +52,7 @@ Las tareas asociadas a cada meta se mostrarán como tarjetas en el lado derecho 
 El proyecto sigue la siguiente estructura de archivos:
 
 ```
-actividad1-22011423/
+proyecto-22011423/
 ├── public/
 ├── src/
 │   ├── Components/
