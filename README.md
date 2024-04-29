@@ -71,6 +71,11 @@ proyecto-22011423/
 │   │   ├── AddButton/
 │   │   │   ├── AddButton.js
 │   │   │   ├── AddButton.scss
+│   ├── reducers/
+│   │   ├── alertSlice.js
+│   │   ├── goalsSlice.js
+│   │   ├── tasksSlice.js
+│   │   ├── typeSlice.js
 │   ├── App.js
 │   ├── App.css
 │   └── index.js
@@ -80,6 +85,7 @@ proyecto-22011423/
 - **public/**: Contiene archivos estáticos como el índice HTML y los recursos multimedia.
 - **src/**: Contiene el código fuente de la aplicación.
   - **components/**: Contiene los componentes de React utilizados en la aplicación.
+  - **reducers/**: Contiene los componentes de Redux utilizados en la aplicación.
   - **App.js**: El punto de entrada principal de la aplicación.
   - **App.css**: Archivo de estilos CSS para la aplicación.
   - **index.js**: Archivo de inicio de la aplicación React.
