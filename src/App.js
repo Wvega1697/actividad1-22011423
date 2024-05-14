@@ -10,23 +10,28 @@ import { showAlert, hideAlert } from "./reducers/alertSlice";
 import "./App.scss";
 
 function App() {
-  const alert = useSelector((state) => state.alert.value);
+  const alert = useSelector((state) => state.alert);
   const dispatch = useDispatch();
 
   const handleShowAlert = (type, message) => {
     dispatch(showAlert({ type, message }));
     const timer = setTimeout(() => {
       dispatch(hideAlert());
-    }, 3000);
+    }, 2000);
     return () => clearTimeout(timer);
   };
+
+  const handleCloseAlert = () => {
+    console.log("Closing alert...");
+    dispatch(hideAlert());
+  };  
 
   return (
     <div className="App">
       <Menu />
       <div className="alert-container">
         {alert.show && (
-          <Alert variant={alert.type} onClose={handleShowAlert} dismissible>
+          <Alert variant={alert.type} onClose={handleCloseAlert} dismissible>
             {alert.message}
           </Alert>
         )}

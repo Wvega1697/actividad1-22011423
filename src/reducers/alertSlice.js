@@ -1,24 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const initialState = {
+  show: false,
+  type: "",
+  message: "",
+};
+
 export const alertSlice = createSlice({
   name: "alert",
-  initialState: {
-    value: {
-      show: false,
-      type: "",
-      message: "",
-    },
-  },
+  initialState,
   reducers: {
     showAlert: (state, action) => {
-      state.value.show = true;
-      state.value.type = action.payload.type;
-      state.value.message = action.payload.message;
+      state.show = true;
+      state.type = action.payload.type;
+      state.message = action.payload.message;
     },
     hideAlert: (state) => {
-      state.value.show = false;
-      state.value.type = "";
-      state.value.message = "";
+      state.show = false;
+      state.type = "";
+      state.message = "";
     },
   },
 });
