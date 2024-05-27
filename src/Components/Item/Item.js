@@ -2,21 +2,28 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 import "./Item.scss";
 import { useDispatch, useSelector } from "react-redux";
-import { removeTask } from "../../reducers/tasksSlice";
-import { removeGoal } from "../../reducers/goalsSlice";
+import { asyncRemoveTask } from "../../reducers/tasksSlice";
+import { asyncRemoveGoal } from "../../reducers/goalsSlice";
 
 function Item(props) {
   const type = useSelector((state) => state.type.value);
   const dispatch = useDispatch();
   const typeText = type === 0 ? "Task" : "Goal";
-  const removeItem = (e) => {
+
+  const removeItem = async (e) => {
     e.preventDefault();
-    if (type === 0) {
-      dispatch(removeTask(props.index));
-    } else {
-      dispatch(removeGoal(props.index));
+    try {
+      if (type === 0) {
+        await dispatch(asyncRemoveTask(props.index));
+        props.onDelete(`${typeText} removed successfully!`);
+      } else {
+        await dispatch(asyncRemoveGoal(props.index));
+        props.onDelete(`${typeText} removed successfully!`);
+      }
+    } catch (err) {
+      console.log("ERR");
+      props.onDelete(`Failed to remove ${typeText}.`);
     }
-    props.onDelete(typeText + ' removed!');
   };
 
   return (
@@ -28,7 +35,9 @@ function Item(props) {
         <Card.Text>{props.description}</Card.Text>
         <Card.Title>Due Date</Card.Title>
         <Card.Text>{props.dueDate}</Card.Text>
-        <Button variant="info" onClick={removeItem}>Complete</Button>
+        <Button variant="info" onClick={removeItem}>
+          Complete
+        </Button>
       </Card.Body>
     </Card>
   );

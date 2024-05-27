@@ -1,6 +1,6 @@
-# Actividad 2 - 22011423
+# Actividad 4 - 22011423
 Williams Adolfo Vega Montenegro
-Actividad 2 - Curso "Desarrollo de Aplicaciones Web - Sección A"
+Actividad 4 - Curso "Desarrollo de Aplicaciones Web - Sección A"
 
 # Aplicación de Lista de Tareas y Metas Personales
 
