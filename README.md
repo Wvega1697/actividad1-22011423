@@ -1,6 +1,6 @@
-# Actividad 6 - 22011423
+# Proyecto Final - 22011423
 Williams Adolfo Vega Montenegro
-Actividad 6 - Curso "Desarrollo de Aplicaciones Web - Sección A"
+Proyecto Final - Curso "Desarrollo de Aplicaciones Web - Sección A"
 
 # Aplicación de Lista de Tareas y Metas Personales
 
