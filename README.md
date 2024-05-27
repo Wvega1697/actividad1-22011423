@@ -1,12 +1,12 @@
-# Actividad 4 - 22011423
+# Actividad 6 - 22011423
 Williams Adolfo Vega Montenegro
-Actividad 4 - Curso "Desarrollo de Aplicaciones Web - Sección A"
+Actividad 6 - Curso "Desarrollo de Aplicaciones Web - Sección A"
 
 # Aplicación de Lista de Tareas y Metas Personales
 
 Esta es una aplicación web diseñada para llevar el control de tareas y metas personales. Proporciona un espacio donde puedes registrar tus objetivos y las tareas necesarias para alcanzarlos.
 
-## Instrucciones de Instalación
+## Instrucciones de Instalación entorno local
 
 Sigue estos pasos para configurar y ejecutar la aplicación en tu entorno local:
 
@@ -31,7 +31,7 @@ Sigue estos pasos para configurar y ejecutar la aplicación en tu entorno local:
    npm install
    ```
 
-## Ejecución de la Aplicación
+### Ejecución de la Aplicación
 
 Una vez que hayas instalado las dependencias, puedes iniciar la aplicación con el siguiente comando:
 
@@ -40,6 +40,30 @@ npm start
 ```
 
 Este comando inicia un servidor de desarrollo y abre la aplicación en tu navegador predeterminado. Si no se abre automáticamente, puedes acceder a la aplicación en [http://localhost:3000](http://localhost:3000).
+
+## Instrucciones de Instalación usando Docker
+
+### Prerrequisitos
+Asegúrate de tener Docker instalado en tu sistema. Puedes descargarlo e instalarlo desde [Docker](https://www.docker.com/get-started).
+
+### Construir la imagen de Docker
+
+1. Navega al directorio raíz del proyecto.
+2. Construye la imagen de Docker ejecutando el siguiente comando:
+
+    ```sh
+    docker build -t proyecto-22011423 .
+    ```
+
+### Correr el contenedor
+
+1. Después de construir la imagen, puedes correr el contenedor ejecutando:
+
+    ```sh
+    docker run -p 8080:80 proyecto-22011423
+    ```
+
+    Esto mapeará el puerto 80 del contenedor al puerto 8080 de tu máquina local. Puedes acceder a la aplicación en tu navegador web en `http://localhost:8080`.
 
 ## Uso
 
