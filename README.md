@@ -115,8 +115,6 @@ proyecto-22011423/
   - **index.js**: Archivo de inicio de la aplicación React.
 
 ## Imagenes
-## Actividad 6
-
 ## Actividad 2
 
 ![image](https://github.com/Wvega1697/proyecto-22011423/assets/20270532/0b51bb8f-2bec-4d23-a574-c88db2cebc22)
